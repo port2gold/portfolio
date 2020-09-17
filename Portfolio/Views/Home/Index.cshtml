@@ -1,0 +1,90 @@
+﻿
+@model PortfolioModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="main-container">
+    <div class="image-thumbnails text-center">
+        <a href="https://www.facebook.com"><img src="~/images/facebook.webp" /></a>
+        <a href="https://www.twitter.com"><img src="~/images/instagram.webp" /></a>
+        <a href="https://twitter.com/Kaybeesure"><img src="~/images/twitter.webp" /></a>
+        <a href="https://www.linkedin.com/in/abdulkabir-omotoso-5ba705140/"><img src="~/images/linkedIn.webp" /></a>
+    </div>
+    <div class="intro">
+        <div class="intro-type">
+            <h2 class="display-3">HI, <br> My Name is <strong>@Model.FirstName @Model.LastName</strong><br></h2>
+            <p>I am a .NET Software Engineer</p>
+
+        </div>
+        <img class="personal-image" src="~/images/mypic.jpeg" />
+    </div>
+    <br /><br /><br />
+    <div class="tech-used">
+        <h2 class="text-center display-2">Technologies Used</h2>
+        <br /><br />
+        <ul class="text-center">
+            @foreach (var item in Model.TechnologyUsed)
+            {
+                <li>@item</li>
+            }
+        </ul>
+      
+
+    </div>
+    <br /><br />
+    
+    
+    <div class="section1 text-center">
+        <h2 class="text-center display-2">Experience</h2> <br /><br /><br />
+        <h4>Decagon, Lagos - Software Engineer(In Training)</h4>
+        <h5>JULY, 2020 - PRESENT</h5>
+
+        <p>Built Mini-Project with .NET Framework using C#.</p>
+        <p>Handled Database Management with Microsoft SQL Server Studio.</p>
+        <p>Experience writing Unit test and Test Driven Development with (Nunit, Moq).</p>
+        <p>Exposure to agile methodologies and working remotely.</p>
+
+    </div>
+    <div class="project">
+        <br /><br /><br /><br /><br />
+        <h2 class="text-center display-2">Project</h2>
+        <br /><br /><br />
+        <div class="project1">
+            <div class="project-type">
+                <h4>Shopping Cart</h4>
+                <p>A simulation of a shopping cart.</p>
+                <p>Product can be added to the shopping cart</p>
+            </div>
+            <a href="https://github.com/decadevs/week-7-task-port2gold"><img class="project-img" src="~/images/shoppingpro.png" /></a>
+
+        </div>
+
+        <br /><br />
+        <div class="project1">
+            <div class="project-type">
+                <h4>A simple calculator</h4>
+                <p>A simple calulator using C# and windows form.</p>
+
+            </div>
+            <div class="project-img">
+                <a href="https://github.com/port2gold/Basic-Calculator"><img src="~/images/calculatorProject.png" /></a>
+
+            </div>
+        </div>
+        <br /><br />
+        <div class="project1">
+            <div class="project-type">
+                <h4>Performance Tracker</h4>
+                <p>A simple app that calcuates the performance and cummulative performance</p>
+
+            </div>
+            <div class="project-img">
+                <a href="https://github.com/port2gold/PerformanceTracker"><img src="~/images/cumulativepro.png" /></a>
+
+            </div>
+        </div>
+
+    </div>
+</div>
