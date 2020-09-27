@@ -4,3 +4,22 @@
     flex-direction: row;
     justify-content: center;
 }
+.technologies-row1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+}
+.lang-img img{
+    width: 15vw;
+    height: 12vw;
+    margin-right: 100px;
+}
+.lang-txt{
+    align-items:center;
+}
+.technical{
+    align-items: center;
+}
+.aota{
+    margin-right:5px;
+}
