@@ -125,4 +125,9 @@ body {
 }
 .image-thumbnails img{
     width : 3vw;
+   
+}
+.technologies{
+    display: flex;
+    flex-direction:row;
 }

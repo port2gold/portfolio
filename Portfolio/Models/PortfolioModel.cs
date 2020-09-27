@@ -18,6 +18,7 @@ namespace Portfolio.Models
         public string LastName { get; set; }
 
         public List<string> TechnologyUsed { get; set; }
+
         public string image { get; set; }
     }
 }
