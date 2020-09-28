@@ -8,16 +8,18 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 80px;
+    justify-content:space-evenly;
 }
 .lang-img img{
-    width: 15vw;
-    height: 12vw;
+    width: 12vw;
+    height: 13vw;
     margin-right: 100px;
 }
 .lang-txt{
-    align-items:center;
+    text-align: center;
 }
-.technical{
+.technical {
+    align-items: center;
     align-items: center;
 }
 .aota{
